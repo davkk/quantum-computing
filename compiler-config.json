@@ -1,0 +1,15 @@
+{
+    "passes": [
+        {
+            "type": "io.cqasm.Report",
+            "name": "custom",
+            "options": {
+                "cqasm_version": "1.0",
+                "with_platform": "no",
+                "with_metadata": "no",
+                "with_timing": "no",
+                "with_statistics": "yes"
+            }
+        }
+    ]
+}
