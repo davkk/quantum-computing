@@ -44,7 +44,7 @@ def plot_histogram(dice_faces):
 def dice_execute_multishot():
     print("executing 8-face dice program on qxelarator")
     qx = qxelarator.QX()
-    qx.set("./dice.custom.cq")
+    qx.set("./dice.qasm")
     dice_faces = []
     ntests = 100
     for _ in range(ntests):

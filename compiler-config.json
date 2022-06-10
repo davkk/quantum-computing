@@ -2,13 +2,15 @@
     "passes": [
         {
             "type": "io.cqasm.Report",
-            "name": "custom",
+            "name": "output",
             "options": {
                 "cqasm_version": "1.0",
                 "with_platform": "no",
                 "with_metadata": "no",
                 "with_timing": "no",
-                "with_statistics": "yes"
+                "with_statistics": "no",
+                "output_prefix": "%D/%N",
+                "output_suffix": ".qasm"
             }
         }
     ]
