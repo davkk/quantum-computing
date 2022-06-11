@@ -5,7 +5,7 @@ qubits 10
 
 
 .tp_kernel
-    x q[0]
+    h q[0]
     h q[1]
     cnot q[1], q[2]
     cnot q[0], q[1]

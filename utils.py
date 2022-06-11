@@ -3,6 +3,7 @@ from openql.openql import Program
 from functools import reduce
 from collections import defaultdict
 import matplotlib.pyplot as plt
+import random
 
 
 def simulate(*, program: Program, measured: list = None, shots: int) -> dict:
@@ -35,3 +36,7 @@ def plot_histogram(counts: dict, **kwargs):
 
     plt.grid(axis="y")
     plt.show()
+
+
+def random_state(n: int) -> str:
+    return f"{random.randint(0, 2**n - 1):0{n}b}"
