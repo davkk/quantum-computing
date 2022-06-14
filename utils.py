@@ -10,6 +10,7 @@ def simulate(*, program: Program, measured: list = None, shots: int) -> dict:
     qx = qxelarator.QX()
     qx.set(f"output/{program.name}.qasm")
 
+    # measure all qubits by default
     qubits = range(program.qubit_count) if measured is None else measured
 
     counts = defaultdict(int)
